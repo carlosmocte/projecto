@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Temperature with Nodejs</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      #menu {
+        background: #000;
+      }
+
+      #menu ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        margin-left: 450px;
+      }
+
+      #menu ul li {
+        display: inline-block;
+      }
+
+      #menu ul li a {
+        color: white;
+        display: block;
+        padding: 10px 60px;
+
+        text-decoration: none;
+      }
+
+      #menu ul li a:hover {
+        background-color: #2596be;
+      }
+
+      .space {
+        margin: 200px;
+      }
+    </style>
+
+    <body>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">TEMPERATURA</a></li>
+          <li><a href="./pages/cluster.html">CLUSTER</a></li>
+          <li><a href="./pages/soporte.html">SOPORTE</a></li>
+        </ul>
+      </div>
+    </body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <style media="screen">
-    html, body {
-  height:100%;
-}
-body {
-  display:flex;
-  align-items:center;
-  background: #34495e;
-}
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: block;
+        align-items: center;
+        background: #01284e;
+      }
     </style>
   </head>
+
   <body>
+    <div class="space"></div>
     <div class="container">
-        <div class="row justify-content-center align-self-center">
-          <div class="card">
-            <h1 id="temperature" class="display-1 p-4"></h1>
-          </div>
+      <div class="row justify-content-center align-self-center">
+        <div class="card">
+          <h1 id="temperature" class="display-1 p-4"></h1>
+        </div>
       </div>
     </div>
 
